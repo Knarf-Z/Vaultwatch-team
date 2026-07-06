@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Research | Vaultwatch Research</title>
+    <meta name="description" content="Research directions and projects at Vaultwatch Research.">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <canvas id="starfield" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="index.html">Vaultwatch</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="people.html">People</a>
+        <a class="active" href="research.html">Research</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-title">
+        <p class="eyebrow">Research</p>
+        <h1>Protocol risk, measured from public evidence.</h1>
+        <p>
+          We study security questions where cryptographic guarantees, economic
+          incentives, and public records do not automatically line up.
+        </p>
+      </section>
+
+      <section class="research-block">
+        <p class="eyebrow">Project in preparation</p>
+        <h2>Do DeFi Bug Bounties Scale with Value at Risk?</h2>
+        <p>
+          This project studies whether public DeFi bug bounty ceilings are
+          calibrated to the amount of value that protocols publicly report as
+          being at risk. We compare Immunefi-listed bounty programs with public
+          protocol metrics such as TVL, protocol category, chain, critical
+          reward cap, reward formula, proof-of-concept requirements, KYC
+          requirements, and scope restrictions.
+        </p>
+        <p>
+          The project is an empirical public-evidence audit. It is not a claim
+          that any specific protocol is vulnerable, and it is not a private
+          security review. The goal is to measure whether public bounty policies
+          appear proportional to public exposure, and to identify design patterns
+          that make responsible disclosure more or less credible.
+        </p>
+        <ul class="clean-list">
+          <li><strong>Data sources:</strong> public bug bounty pages, DeFiLlama protocol data, project documentation, and governance records.</li>
+          <li><strong>Main metric:</strong> maximum critical bounty divided by a public value-at-risk proxy.</li>
+          <li><strong>Output:</strong> cleaned dataset, reproducible figures, and a research note or working paper.</li>
+        </ul>
+      </section>
+
+      <section class="section cards">
+        <article class="card">
+          <span>Direction A</span>
+          <h3>Security economics</h3>
+          <p>
+            How should protocols price incentives that are supposed to prevent
+            catastrophic failure?
+          </p>
+        </article>
+
+        <article class="card">
+          <span>Direction B</span>
+          <h3>Evidence discipline</h3>
+          <p>
+            What can be certified from public records, and what remains a
+            private or unverifiable claim?
+          </p>
+        </article>
+
+        <article class="card">
+          <span>Direction C</span>
+          <h3>DeFi risk measurement</h3>
+          <p>
+            How do TVL, scope, governance, and bounty design interact in real
+            deployed systems?
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Vaultwatch Research</span>
+      <span>Research</span>
+    </footer>
+
+    <script src="assets/js/starfield.js"></script>
+  </body>
+</html>
